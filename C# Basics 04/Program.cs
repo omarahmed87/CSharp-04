@@ -1,8 +1,7 @@
-﻿#region 3st answer
+﻿#region 4st answer
 /*
-3-Create a StringBuilder, Append() the text "Book List", then Append() 
-" - Updated" onto the same object. Print the final result. 
-  */
+4-Using the StringBuilder from the question above, use Replace() to change "Book List" 
+into "Library". Print the result.*/
 #endregion
 
 using System.Text;
@@ -13,6 +12,7 @@ class program
     {
         StringBuilder update =new StringBuilder("Book List");
         update.Append(" _ Updated");
+        update.Replace("Book List", "Libraray");
         Console.WriteLine(update);
     }
 }
