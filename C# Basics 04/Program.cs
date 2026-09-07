@@ -1,7 +1,7 @@
-﻿#region 1st answer
+﻿#region 2st answer
 /*
-1-Declare string title = "clean code";. Call title.ToUpper()and store it in a new variable
-upperTitle. Print both title and upperTitle to show that title did not change.
+2-Declare two separate string variables, both set to the literal "Clean Code".
+Use ReferenceEquals() to check if they point to the same object in memory.
   */
 #endregion
 
@@ -9,9 +9,10 @@ class program
 {
     static void Main(string[] args)
     {
-        string title = "clean code";
-        string upperTitle = title.ToUpper();
-        Console.WriteLine($"Original title: {title}");
-        Console.WriteLine($"Uppercase title: {upperTitle}");
+
+        string name1 = "Clean Code";
+        string name2 = "Clean Code";
+
+        Console.WriteLine(object.ReferenceEquals(name1, name2)); //true
     }
 }
