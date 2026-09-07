@@ -1,16 +1,12 @@
-﻿#region 6st answer
-/*
-6-Build the same sentence as above, but using string interpolation ($"...").*/
+﻿#region 7st answer
+//7 - Build the same sentence again, but using string.Format().
 #endregion
-
-using System.Text;
-
 class program 
 {
     static void Main(string[] args)
     {
         string title = "Clean Code ";
         int pages = 464;
-        Console.WriteLine($"Book:{title}\nPages:{pages}");
+        Console.WriteLine(string.Format("Book: {0}\npages {1}", title, pages));
     }
 }
