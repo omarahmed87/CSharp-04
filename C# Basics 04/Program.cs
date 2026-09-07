@@ -1,7 +1,6 @@
-﻿#region 5st answer
+﻿#region 6st answer
 /*
-5-Given string title = "Clean Code"; and int pages = 464;, build the sentence 
-"Book: Clean Code, Pages: 464" using the + operator. .*/
+6-Build the same sentence as above, but using string interpolation ($"...").*/
 #endregion
 
 using System.Text;
@@ -12,6 +11,6 @@ class program
     {
         string title = "Clean Code ";
         int pages = 464;
-        Console.WriteLine(title + pages);
+        Console.WriteLine($"Book:{title}\nPages:{pages}");
     }
 }
