@@ -1,7 +1,7 @@
-﻿#region 4st answer
+﻿#region 5st answer
 /*
-4-Using the StringBuilder from the question above, use Replace() to change "Book List" 
-into "Library". Print the result.*/
+5-Given string title = "Clean Code"; and int pages = 464;, build the sentence 
+"Book: Clean Code, Pages: 464" using the + operator. .*/
 #endregion
 
 using System.Text;
@@ -10,9 +10,8 @@ class program
 {
     static void Main(string[] args)
     {
-        StringBuilder update =new StringBuilder("Book List");
-        update.Append(" _ Updated");
-        update.Replace("Book List", "Libraray");
-        Console.WriteLine(update);
+        string title = "Clean Code ";
+        int pages = 464;
+        Console.WriteLine(title + pages);
     }
 }
